@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Which Quotes?</title>
+    </head>
+    <script src="static/scripts.js"></script>
+    <body>
+          <form method="post" enctype="multipart/form-data" action="/success">
+            <select id="contact" name="contact" onchange="checkTextField()" required>
+                <option value=""></option>
+                <option value="phone">Text</option>
+                <option value="email">Email</option>
+            </select>
+            <label for="contact">Form of Contact</label>
+            
+            <div id="textbox" onchange="validity()"></div>
+            <div id="carrier" onchange="check_carrier()"></div>
+
+            <div>
+                <input type="checkbox" name="dropdown" value="inspirational">
+                <label for="hello">inspirational quotes</label>
+              </div>
+              
+              <div>
+                <input type="checkbox" name="dropdown" value="religion">
+                <label for="hello">religion quotes</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="dropdown" value="love">
+                <label for="hello">love quotes</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="dropdown" value="philosophy">
+                <label for="hello">philosophy quotes</label>
+              </div>
+            <input type="submit" id="submit" value="Send" onclick="check_input();">
+
+            <p>Request new type of quotes you want to see down below</p>
+            <a href="/report">Quote Requests</a>
+        </form>
+    </body>
+</html>
