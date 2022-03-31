@@ -2,7 +2,7 @@
 
 ## Libraries Used
 
-Flask
+Flask <br />
 Selenium with Microsoft Edge Driver
 Gmail SMTP
 CSV
